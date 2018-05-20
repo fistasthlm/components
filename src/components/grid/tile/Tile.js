@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import ImmutablePropTypes from 'react-immutable-proptypes'
 import { Link } from 'react-router-dom'
-import { Map } from 'immutable'
 import InstagramLink from '../../shared/instagramLink/InstagramLink'
 import Image from '../../shared/image/Image'
 import style from './Tile.scss'
@@ -24,7 +23,7 @@ export default function Tile ({bike}) {
           }
 
         </div>
-        <h2 className={bike.title}>
+        <h2 className={style.title}>
           {bike.get('title')}
         </h2>
       </Link>
@@ -34,5 +33,5 @@ export default function Tile ({bike}) {
 }
 
 Tile.propTypes = {
-  bike: PropTypes.instanceOf(Map).isRequired
+  bike: ImmutablePropTypes.map.isRequired
 }

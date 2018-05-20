@@ -1,0 +1,52 @@
+@import "~fista-styles/styles/fista";
+
+.navContent {
+    padding: 20px 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding: 30px 10px 10px 20px;
+    }
+}
+
+.leftDiv {
+    margin-left: 5px;
+    display: flex;
+    align-items: baseline;
+    @include breakpoint(sm) {
+        width: 20%;
+    }
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+.siteDescription {
+    margin-left: 10px;
+}
+
+.rightDiv {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 30px;
+
+    @include breakpoint(sm) {
+        display: none;
+    }
+}
+
+.navBar {
+    display: none;
+
+    @include breakpoint(sm) {
+        display: inline-flex;
+        overflow: auto;
+        padding-top: 5px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+}

@@ -6,13 +6,15 @@ export default function Home () {
   const bikes = fromJS([
     {
       title: 'dolan',
-      images: [],
+      instagram: 'peteholmberg',
+      images: [{
+        url: 'https://cdn.filestackcontent.com/cMGicHSdm7Sb4p7uWCwh',
+      }],
     }
   ])
 
   return (
-    <div>
-      hello
+    <div className="container" style={{backgroundColor: 'black'}}>
       <Grid bikes={bikes} />
     </div>
   )

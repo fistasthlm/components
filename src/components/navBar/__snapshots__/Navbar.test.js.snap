@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render should render component 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    <NavLink
+      to="/"
+    >
+      <Image
+        caption="fista sthlm"
+        height="80"
+        resize={true}
+        url="https://images.contentful.com/x1j0zkbk3421/4wgAQ4qPFKIyyeoUImGYko/66256a7ec6c12ea8f8d1d88bbcafe6ea/fistasthlm-logotype.png"
+        width="200"
+      />
+    </NavLink>
+  </div>
+  <div>
+    <Hamburger
+      toggleMenu={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Render should render with site description 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    <NavLink
+      to="/"
+    >
+      <Image
+        caption="fista sthlm"
+        height="80"
+        resize={true}
+        url="https://images.contentful.com/x1j0zkbk3421/4wgAQ4qPFKIyyeoUImGYko/66256a7ec6c12ea8f8d1d88bbcafe6ea/fistasthlm-logotype.png"
+        width="200"
+      />
+    </NavLink>
+  </div>
+  <div>
+    <Hamburger
+      toggleMenu={[Function]}
+    />
+  </div>
+</div>
+`;

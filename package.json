@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development concurrently --kill-others \"nodemon demo\"",
-    "build": "cp -R src/ lib/",
+    "build": "rm -rf lib && mkdir lib && cp -R src/ lib/",
     "test": "jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch"
   },
@@ -27,8 +27,9 @@
   },
   "homepage": "https://github.com/fistasthlm/fista-components#readme",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "fista-styles": "git+https://github.com/fistasthlm/fista-styles.git",
     "immutable": "^3.8.2",
-    "fista-styles": "https://github.com/fistasthlm/fista-styles",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-immutable-proptypes": "^2.1.0"
@@ -46,7 +47,7 @@
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "history": "^4.7.2",
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.4",
     "postcss-loader": "^2.1.5",
@@ -64,6 +65,6 @@
     "webpack-dev-middleware": "^3.1.3",
     "webpack-hot-middleware": "^2.22.2",
     "webpack-hot-server-middleware": "^0.5.0",
-    "write-file-webpack-plugin": "^4.3.1"
+    "write-file-webpack-plugin": "^4.3.2"
   }
 }

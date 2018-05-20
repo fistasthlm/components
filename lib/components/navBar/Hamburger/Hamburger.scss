@@ -1,0 +1,27 @@
+@import "~fista-styles/styles/fista";
+
+.hamburgerButton {
+    @include breakpoint(sm) {
+        display: none;
+    }
+}
+
+
+.toggleButton {
+    border: none;
+    background-color: black;
+}
+
+.toggleButton:focus {
+    outline: none;
+}
+
+.iconBar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: white !important;
+    border-radius: 1px;
+    padding: 1px;
+}
