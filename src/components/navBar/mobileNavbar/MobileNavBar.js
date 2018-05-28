@@ -33,7 +33,7 @@ export default class MobileNavBar extends PureComponent {
                 <NavLink
                   exact={true}
                   className={style.navItem}
-                  activeClassName="active"
+                  activeClassName={style.active}
                   onClick={toggleMenu}
                   to={link.get('to')}>
                   {link.get('route')}

@@ -1,9 +1,15 @@
 @import "~fista-styles/styles/fista";
 
-.menuItem {
-    margin: 20px 0;
-    text-transform: uppercase;
-    color: white;
+.desktopNavbar {
+    display: none;
+
+    @include breakpoint(sm) {
+        display: inline-flex;
+        overflow: auto;
+        padding-top: 5px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
 }
 
 .navItem {
@@ -32,21 +38,4 @@
     background-color: white;
     color: black;
     pointer-events: none;
-}
-
-.hamburgerMenu {
-    display: none;
-}
-
-.hamburgerMenuOpen {
-    display: block;
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    position: absolute;
-    right: 15px;
-    top: 60px;
-    z-index: 10;
-    padding: 10px;
 }
