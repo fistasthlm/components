@@ -1,19 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render should render component 1`] = `
-<div
-  className="navbar"
-/>
-`;
+exports[`Render should render component 1`] = `<div />`;
 
 exports[`Render should render links 1`] = `
-<div
-  className="navbar"
->
+<div>
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
-    className="nav-item"
     exact={true}
     key="0-/"
     to="/"
@@ -23,7 +16,6 @@ exports[`Render should render links 1`] = `
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
-    className="nav-item"
     exact={true}
     key="1-/bikes"
     to="/bikes"
@@ -31,7 +23,6 @@ exports[`Render should render links 1`] = `
     Bikes
   </NavLink>
   <div
-    className="nav-item"
     key="0-Log out"
     onClick={[MockFunction]}
   >

@@ -16,7 +16,7 @@ export default function ComponentListItem ({component, active, handleSelectCompo
     <li
       className={listStyle}
       onClick={selectComponent}>
-      {component}
+      {component.get('name')}
     </li>
   )
 }

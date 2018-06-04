@@ -1,6 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Navbar from './NavBar'
+import { Map } from 'immutable'
+import NavBar from './NavBar'
 
 jest.mock('react-router-dom', () => ({
   withRouter: params => params,
@@ -10,10 +11,11 @@ jest.mock('react-router-dom', () => ({
 const setup = propOverrides => {
   const props = Object.assign({
     onLogout: jest.fn(),
-    siteDescription: ''
+    siteDescription: '',
+    options: Map()
   }, propOverrides)
 
-  return shallow(<Navbar />)
+  return shallow(<NavBar {...props} />)
 }
 
 describe('Render', () => {

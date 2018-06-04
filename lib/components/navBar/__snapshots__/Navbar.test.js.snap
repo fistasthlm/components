@@ -22,6 +22,11 @@ exports[`Render should render component 1`] = `
       toggleMenu={[Function]}
     />
   </div>
+  <MobileNavBar
+    menuToggled={false}
+    options={Immutable.Map {}}
+    toggleMenu={[Function]}
+  />
 </div>
 `;
 
@@ -41,11 +46,19 @@ exports[`Render should render with site description 1`] = `
         width="200"
       />
     </NavLink>
+    <span>
+      components
+    </span>
   </div>
   <div>
     <Hamburger
       toggleMenu={[Function]}
     />
   </div>
+  <MobileNavBar
+    menuToggled={false}
+    options={Immutable.Map {}}
+    toggleMenu={[Function]}
+  />
 </div>
 `;
