@@ -1,2 +1,8 @@
 @import "~fista-styles/styles/fista";
 @import "~fista-styles/styles/fista-setup";
+
+:global body {
+    background-color: white;
+    color: black;
+    @include font-size(16);
+}

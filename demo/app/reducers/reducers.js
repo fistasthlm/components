@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { fromJS } from 'immutable'
+import componentReducers from 'reducers/componentReducers'
 
 function appState (state = fromJS({
   networkFailed: false,
@@ -12,7 +13,8 @@ function appState (state = fromJS({
 }
 
 const rootReducer = combineReducers({
-  appState
+  appState,
+  componentReducers,
 })
 
 export default rootReducer
